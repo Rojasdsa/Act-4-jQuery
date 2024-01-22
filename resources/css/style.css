@@ -1,6 +1,19 @@
 
-/* LOGO */
 
+
+/* HEADER */
 #logo{
     width: 50px;
+}
+
+/* FOOTER */
+
+.footer-block ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255,0.55);
+}
+
+.footer-block ul li a:hover{
+    text-decoration: none;
+    color:#0dcaf0;
 }
