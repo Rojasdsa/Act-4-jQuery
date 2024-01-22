@@ -1,19 +1,43 @@
-
-
+/* Contenedor principal que abarca toda la página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
 
 /* HEADER */
-#logo{
+header {
+    flex-shrink: 0;
+    /* No se reducirá en tamaño cuando el contenido crezca */
+}
+
+#logo {
     width: 50px;
 }
 
-/* FOOTER */
-
-.footer-block ul li a{
-    text-decoration: none;
-    color:rgb(255, 255, 255,0.55);
+/* MAIN */
+main {
+    flex-grow: 1;
+    /* Se expandirá para llenar el espacio disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
 }
 
-.footer-block ul li a:hover{
+/* FOOTER */
+footer {
+    flex-shrink: 0;
+    /* No se reducirá en tamaño cuando el contenido crezca */
+}
+
+.footer-block ul li a {
     text-decoration: none;
-    color:#0dcaf0;
+    color: rgb(255, 255, 255, 0.55);
+}
+
+.footer-block ul li a:hover {
+    text-decoration: none;
+    color: #0dcaf0;
 }
