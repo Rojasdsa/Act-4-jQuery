@@ -16,50 +16,6 @@ header {
     width: 50px;
 }
 
-/* MAIN */
-main {
-    flex-grow: 1;
-    /* Se expandirá para llenar el espacio disponible */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100%;
-    background-color: rgb(177, 163, 145);
-}
-
-/* ACORDEÓN */ 
-
-.item {
-    border: 1px solid #0dcaf0;
-    margin-bottom: 5px;
-}
-
-.titulo {
-    background-color: rgb(255, 255, 255, 0.55);
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.contenido {
-    display: none;
-    padding: 16px;
-    color: #dddddd;
-}
-
-.contenido span {
-    color:#0dcaf0;
-}
-
-/* IMÁGENES */
-
-.contenido img {
-    width: 470px;
-    height: 308px;
-    border-color: #dddddd;
-}
-
 /* FOOTER */
 footer {
     flex-shrink: 0;
@@ -73,5 +29,54 @@ footer {
 
 .footer-block ul li a:hover {
     text-decoration: none;
+    color: #0dcaf0;
+}
+
+/*------------------------------*/
+/* MAIN */
+main {
+    flex-grow: 1;
+    /* Se expandirá para llenar el espacio disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background-color: rgb(177, 163, 145);
+}
+
+/* MAIN: ACORDEÓN */
+.item {
+    border: 1px solid #0dcaf0;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    background-color: rgb(255, 255, 255, 0.55);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* info */
+.info-empresa, .contact-empresa, .map-empresa {
+    display: none;
+    padding: 16px;
+    color: #dddddd;
+}
+
+.info-empresa span {
+    color: #0dcaf0;
+}
+
+/* imágenes */
+.img-empresa img {
+    width: 470px;
+    height: 308px;
+    border-color: #dddddd;
+}
+
+/* contacto */
+.contact-empresa span:hover {
     color: #0dcaf0;
 }
