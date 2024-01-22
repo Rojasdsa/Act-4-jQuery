@@ -1,4 +1,4 @@
-/* Contenedor principal que abarca toda la página */
+/* BODY */
 body {
     display: flex;
     flex-direction: column;
@@ -24,6 +24,40 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 100%;
+    background-color: rgb(177, 163, 145);
+}
+
+/* ACORDEÓN */ 
+
+.item {
+    border: 1px solid #0dcaf0;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    background-color: rgb(255, 255, 255, 0.55);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contenido {
+    display: none;
+    padding: 16px;
+    color: #dddddd;
+}
+
+.contenido span {
+    color:#0dcaf0;
+}
+
+/* IMÁGENES */
+
+.contenido img {
+    width: 470px;
+    height: 308px;
+    border-color: #dddddd;
 }
 
 /* FOOTER */
