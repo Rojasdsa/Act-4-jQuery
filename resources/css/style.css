@@ -76,6 +76,29 @@ main {
     border-color: #dddddd;
 }
 
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(177, 163, 145);
+    display: none;
+    font-size: 28px;
+    background-color: rgba(26, 25, 25);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #0dcaf0;
+}
+
+.bg-overlay-text {
+    transition: 0.5s ease;
+}
 /* contacto */
 .contact-empresa span:hover {
     color: #0dcaf0;
