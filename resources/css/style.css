@@ -109,3 +109,21 @@ main {
 .focused {
     background-color: #dacb8b; /* También puedes cambiar el color de fondo */
 }
+
+/* MAIN: EXTRA */
+#extra-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .example-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .change-cursor {
+    cursor: pointer;
+  }
