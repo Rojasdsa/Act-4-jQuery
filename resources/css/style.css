@@ -103,3 +103,9 @@ main {
 .contact-empresa span:hover {
     color: #0dcaf0;
 }
+
+/* MAIN: FORMULARIO */
+
+.focused {
+    background-color: #dacb8b; /* También puedes cambiar el color de fondo */
+}

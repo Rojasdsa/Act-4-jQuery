@@ -154,9 +154,9 @@
         </section>
 
         <!-- FORMULARIO DE CONTACTO -->
-        <section class="container col-12 bg-light py-3 px-2 my-3">
+        <section class="container col-12 bg-light rounded-2 py-3 px-2 my-3" id="formularioContainer">
             <h2 class="text-center mb-4">Formulario de Contacto</h2>
-            <form id="contactForm d-grid">
+            <form id="contactForm" class="d-grid">
 
                 <div class="container d-flex mb-4">
                     <div class="container d-md-flex">
@@ -187,16 +187,16 @@
                     <div class="col-6">
                         <label class="d-flex">
                             <input class="me-2" type="checkbox" id="politicaPrivacidad" name="politicaPrivacidad" required>
-                            <div class="">He leído y acepto la política de privacidad*</div>
+                            <div class="">He leído y acepto la <a href="#">política de privacidad*</a></div>
                         </label>
                     </div>
                     <div class="container col-6 d-flex px-0 align-items-center">
                         <label class="col-6 text-end" for="captcha">¿Eres un robot?</label>
-                        <div class="col-3 ms-2" id="captchaContainer">
+                        <div class="col-3 text-center" id="captchaContainer">
                             <!-- Aquí se generará la suma aleatoria -->
                         </div>
                         <input class="col-3" type="text" id="captchaInput" name="captchaInput" required>
-                        <span id="captchaResult"></span>
+                        <span class="ms-1" id="captchaResult"></span>
                     </div>
                 </div>
 
@@ -204,6 +204,13 @@
                     <button class="col-3 py-2" type="button" id="enviarBtn">Enviar</button>
                 </div>
             </form>
+        </section>
+
+        <!-- MENSAJE FORMULARIO ENVIADO -->
+        <section class="container col-12 bg-light rounded-2 py-3 px-2 my-3 d-none" id="mensajeContainer">
+            <!-- Aquí se mostrará el mensaje recibido -->
+            <h2 class="text-center mb-4">Mensaje Recibido</h2>
+            <p class="text-center">Gracias por tu mensaje. Lo hemos recibido con éxito.</p>
         </section>
     </main>
 
