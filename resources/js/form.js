@@ -60,30 +60,22 @@ $(document).ready(function () {
         }
     });
 
+    // Asegúrate de tener la función validarFormulario implementada correctamente
     function validarFormulario() {
-        // Obtener valores de los campos
-        let nombre = $('#nombre').val();
-        let email = $('#email').val();
-        let politicaPrivacidad = $('#politicaPrivacidad').prop('checked');
-        let captchaInput = $('#captchaInput').val();
-        let captchaResult = parseInt($('#captchaResult').text());
-
-        // Validar campos obligatorios
-        if (nombre.trim() === '' || email.trim() === '' || captchaInput.trim() === '') {
+         // Verificar campos obligatorios y política de privacidad
+         let nombre = $('#nombre').val();
+         let email = $('#email').val();
+         let comentario = $('#comentario').val();
+         let politicaPrivacidad = $('#politicaPrivacidad').is(':checked');
+         let captchaValido = $('#captchaResult i').hasClass('fa-check');
+ 
+         if (nombre && email && comentario && politicaPrivacidad && captchaValido) {
+             // Aquí puedes enviar el formulario al servidor
+             alert('Formulario enviado con éxito.');
+             return true; // Devuelve true si el formulario es válido, de lo contrario, false
+         } else {
             return false;
-        }
-
-        // Validar política de privacidad
-        if (!politicaPrivacidad) {
-            return false;
-        }
-
-        // Validar captcha
-        if (isNaN(captchaResult) || parseInt(captchaInput) !== captchaResult) {
-            return false;
-        }
-
-        // Si todas las validaciones son exitosas, devuelve true
-        return true;
+         }
+ 
     }
 });
